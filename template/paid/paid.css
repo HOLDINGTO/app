@@ -1,0 +1,33 @@
+
+
+.paid .tip-img{
+	width:80%;
+	text-align:center;
+	margin:0 auto;
+	margin-top:50px;
+}
+.paid .tip-img>img{
+	width:100px;
+	height:100px;
+}
+.paid .pay-state{
+	display: block;
+	font-size:18px;
+	color:#007fc0;
+	margin-top:10px;
+	margin-bottom:50px;
+}
+.paid .selec>div>div{
+	text-align:center;
+	width:60%;
+    color:#fff;
+    margin:0 auto;
+    border-radius:20px;
+    padding:10px 5px;
+}
+.paid .conti{
+   background-color:#ff9601;   
+}
+.paid .check{
+	background-color:#0161ff;
+}

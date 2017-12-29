@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>classify</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./classify.css" />
+</head>
+<body>
+<div class="classify" ng-controller="classifyController">
+	<!-- 头部 -->
+   <ion-header-bar class="bar-positive">
+   	<div id="menu" class="button button-clear">
+   		<i class="icon ion-android-menu"></i>
+   	</div>
+   	<label class="item item-input input-center">
+          <input type="text" placeholder="输入搜索内容">
+  		    <i class="icon ion-ios-search-strong"></i>
+    </label>
+    <!-- 主题内容 -->
+   </ion-header-bar>
+   <div id="sildable" class="side list">
+       <div class="item {{data.state}}" ng-repeat="data in sildeData track by $index">
+          {{data.text}}
+        </div>
+   </div>
+   <ion-content class="content-bg">
+        <!-- 筛选部分 -->
+    
+	 	 <div class="row box-head">
+           <div class="col-33 select">
+               <select class="sel-style">
+               	<option>综合排序</option>
+               	<option>价格由高到低</option>
+               	<option>价格由低到高</option>
+               </select>
+            </div>
+           <div class="col-33 select">
+                <select class="sel-style">
+               	<option>销量优先</option>
+         
+               </select>
+           </div>
+           <div class="col-33 select">
+           	    <select class="sel-style">
+               	<option>价格</option>
+               </select>
+           </div>
+	 	 </div>
+	 	 <div class="row row-wrap">
+	 	 	<div class="col-50" ng-repeat="data in goodsData track by $index">
+	 	 		<div class="classfiy-box">
+                <div class="box-img">
+                    <img class="auto-img" ng-src="{{data.imgUrl}}" />
+                </div>
+                <div class="intro">
+                	  <span class="intro-main">
+                	  	    {{data.text}}
+                	  </span>
+                	  <span class="price">
+                	  	  <span class="new-price">{{data.new_price}}</span>
+                	  	  <s class="old-price">{{data.old_price}}</s>
+                	  </span>
+                	  <span class="extra">
+                	  	  <span class="fre">{{data.freight}}</span>
+                	  	  <span  class="esti r">{{data.number}}<span>人评价</span></span>
+                	  </span>
+                </div>
+	 	 		</div>
+	 	 	</div>
+	 	 </div>
+	 </ion-content>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./classifyController.js"></script>
+</html>

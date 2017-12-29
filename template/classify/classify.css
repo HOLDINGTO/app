@@ -1,0 +1,75 @@
+.classify .content-bg{
+	background-color:#f3f3f3;
+}
+.classify .input-center{
+	border-radius:20px;
+	width:70%;
+	margin:0 auto;
+}
+.classify .input-center>i{
+	margin-right:8px;
+}
+.classify .side{
+	width:150px;
+	position: fixed;
+	top:44px;
+	left:-152px;
+	z-index: 1;
+}
+.classify .active{
+	background-color: #006cff;
+	color:#fff;
+}
+.classify .side>div{
+	text-align:center;
+}
+.classify .side>div:hover{
+    background-color: #006cff;
+	color:#fff;
+}
+.classify .box-head{
+	margin:10px auto;
+}
+.classify .box-head>div{
+    text-align:center;
+    margin:0 auto;
+}
+.classify .sel-style{
+	border:none;
+	padding:5px;
+	border-radius:5px;
+}
+.classify .sel{
+	text-align:center;
+}
+.classify .classfiy-box{
+	margin:5px 1px 0;
+	padding:10px;
+	background-color:#fff;
+}
+.classify .intro{
+	font-size:14px;
+}
+.classify .intro-main{
+	display:block;
+	margin:10px auto 5px;
+	text-align: center;
+}
+.classify .price{
+	display: block;
+	margin:5px auto;
+}
+.classify .new-price{
+  font-size:16px;
+  color:red;
+}
+.classify .old-price{
+  font-size:12px;
+  color:#979696;
+}
+.classify .fre{
+	 color:#979696;
+}
+.classify .esti{
+  color:#979696;
+}

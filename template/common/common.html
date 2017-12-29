@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>common</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./common.css" />
+</head>
+<body>
+<div class="common">
+	<ion-header-bar class=" align-title=center bar-positive">
+	   	<div class="button button-clear">
+	   		<i class="icon ion-ios-arrow-left"></i>
+	   	</div>
+	   	<div class="title titl">通 用</div>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-toggle">
+			     开启位置服务
+			     <label class="toggle toggle-calm">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</ion-item>
+		</ion-list>
+		<ion-list>
+			<ion-item class="item-toggle">
+			     开启首页摇一摇
+			     <label class="toggle toggle-balanced">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</ion-item>
+		</ion-list>
+		<ion-list>
+			<ion-item class="item-toggle">
+			     WIFI自动播放视频
+			     <label class="toggle toggle-assertive">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</ion-item>
+		</ion-list>
+		<ion-list>
+			<ion-item class="item-toggle">
+			     清除缓存
+			     <label class="toggle toggle-royal">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</div>	
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./commonController.js"></script>
+</html>

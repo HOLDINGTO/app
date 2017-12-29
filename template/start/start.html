@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>start</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+</head>
+<body>
+ <div class="start" ng-controller="startController">
+ 	 <ion-slide-box show-pager="false">
+    	<ion-slide  ng-repeat="item in imgData track by $index">
+    		<img class="full-image" ng-src="{{item.imgUrl}}" />
+    	</ion-slide>
+    </ion-slide-box>
+ </div>    
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./startController.js"></script>
+</html>

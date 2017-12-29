@@ -1,0 +1,100 @@
+
+
+.user_order .nav{
+	padding:0;
+	/*position: relative;*/
+}
+.user_order .nav-lis{
+	margin-top:20px;
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #aaa;
+}
+.user_order .status{
+	font-weight: bold;
+}
+.user_order .active{
+	color:#017efe;
+}
+.user_order .order-lis{
+	margin-top:10px;
+}
+.user_order .order-lis>div{
+   padding:0;
+ }
+ .user_order .item-box{
+	margin-bottom:30px;
+}
+ .user_order .order-sta{
+ 	padding:5px;
+ 	margin:0 10px;
+ }
+  .user_order .order-main{
+  	background-color:#f5f5f5;
+  	padding:20px 0;
+  }
+ .user_order .order-img{
+ 	padding:5px;
+ }
+ .user_order .order-img>img{
+ 	width:100%;
+ 	height:100%;
+ }
+ .user_order .order-infor{
+ 	position: relative;
+ 	margin-left:5px;
+ }
+ .user_order .pro-color{
+ 	color:#aaa;
+  	font-size:12px;
+ }
+.user_order .fre{
+ 	position: absolute;
+  	color:#aaa;
+  	font-size:12px;
+    left:0;
+    bottom:0;
+ }
+ .user_order .order-pr>span{
+ 	display: block;
+ 	padding-left:10px;
+ 	margin-top:5px;
+ }
+.user_order .pr{
+	color:red;
+}
+.user_order .ol-pr{
+	font-size:12px;
+	color:#aaa;
+}
+.user_order .sum{
+	font-size:13px;
+	padding-left:30px !important;
+}
+.user_order .bnt{
+	margin:10px 0;
+}
+
+.user_order .del{
+	font-size:15px;
+	text-align:center;
+	color:#fff
+}
+.user_order .del>span{
+	display: block;
+	padding:7px 15px;
+	background-color:#ff2a00;
+	border-radius:10px;
+}
+.user_order .sure{
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+}
+.user_order .sure>span{
+	display: block;
+	padding:7px 10px;
+	margin-left:20px;
+	border-radius:10px;
+	background-color:#0078ff;
+}

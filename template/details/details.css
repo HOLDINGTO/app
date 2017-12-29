@@ -1,0 +1,29 @@
+.details .bar-bg{
+	background-color:#e2e3e3;
+	color:#000;
+	border:none;
+}
+.details .button>i{
+	color:#707070;
+}
+.details .titl{
+	color:#000 !important;
+	font-weight:bold;
+}
+.details .name>h5{
+	padding-left:10px;
+}
+.details .name-img{
+	padding-left:4px;
+}
+.details .name-text{
+	margin-left:5px;
+}
+.details .name-text>span{
+   display:block;
+   font-size:12px;
+   line-height:15px;
+}
+.details .name-h{
+	margin-bottom:10px;
+}

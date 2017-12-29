@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>search</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./search.css" />
+</head>
+<body>
+<div class="search" ng-controller="searchController">
+	  <ion-header-bar class="bar-positive">
+		   	<div class="button button-clear">
+		   		<i class="icon ion-ios-arrow-left"></i>
+		   	</div>
+		   	<label class="item item-input input-center">
+             <input type="text" placeholder="输入搜索内容">
+ 		     <i class="icon ion-ios-search-strong"></i>
+         </label>
+	  </ion-header-bar>
+	  <ion-content>
+	  	  <div class="list">
+	  	  	 <div class="item list-item">
+	  	  	 	  <span class="ite-text">热点搜索</span>
+	  	  	 	  <div class="row row-wrap">
+	  	  	 	  	<span class="col-50">
+	  	  	 	  	    <span class="dis sea-text1">奥迪Q5尼龙簇绒脚垫</span>
+	  	  	 	  	</span>
+	  	  	 	  	<span class="col-50">
+	  	  	 	  	    <span class="dis sea-text2">御捷电动汽车脚垫2</span>
+	  	  	 	  	</span>
+	  	  	 	  	<span class="col-50">
+	  	  	 	  	    <span class="dis sea-text3">环保XPE汽车脚</span>
+	  	  	 	  	</span>
+	  	  	 	  	<span class="col-50">
+	  	  	 	  	    <span class="dis sea-text4">热压汽车脚垫</span>
+	  	  	 	  	</span>
+	  	  	 	  	<span class="col-100">
+	  	  	 	  	    <span class="dis sea-text5">方形灰色绗绣磨砂皮革汽车脚垫</span>
+	  	  	 	  	</span>
+	  	  	 	  </div>
+	  	  	 </div>
+	  	  </div>
+	  	  <div class="list">
+	  	  	 <div class="item list-item item-icon-right">
+	  	  	 	<span class="ite-text">搜索历史      
+	  	  	 	</span>
+	  	  	 	<i class="icon ion-ios-trash-outline i-color"></i>
+	  	  	 </div>
+	  	  	 <div class="item item-icon-right" ng-repeat="data in searchData track by $index">
+	  	  	 	{{data}}
+	  	  	 	<i class="icon ion-close-circled i-color"></i>
+	  	  	 </div>
+	  	  </div>
+	  </ion-content>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./searchController.js"></script>
+</html>

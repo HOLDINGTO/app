@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>audio_inform</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./audio_inform.css" />
+</head>
+<body>
+<div class="audio_inform" ng-controller="audioController">
+	<ion-header-bar class=" align-title=center bar-positive">
+	   	<div class="button button-clear">
+	   		<i class="icon ion-ios-arrow-left"></i>
+	   	</div>
+	   	<div class="title titl">音效与通知</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list">
+			<div class="item item-divider">
+			    音效
+			</div>
+			<div class="item item-toggle">
+				内置音效
+			     <label class="toggle toggle-calm">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</div>
+		</div>
+		<div class="list">
+			<div class="item item-divider">
+			    应用外提醒
+			</div>
+			<div class="item item-toggle" ng-repeat="data in appData track by $index">
+				{{data}}
+			     <label class="toggle toggle-calm">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</div>
+			<div class="list">
+			<div class="item item-divider">
+			    应用内提醒
+			</div>
+			<div class="item item-toggle" ng-repeat="data in appsData track by $index">
+				{{data}}
+			     <label class="toggle toggle-calm">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			</div>
+		</div>
+	</ion-content>
+</div>	
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./audio_informController.js"></script>
+</html>

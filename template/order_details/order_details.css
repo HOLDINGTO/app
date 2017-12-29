@@ -1,0 +1,81 @@
+
+.order_details .order-list{
+	margin-top:10px;
+	background-color:#f5f5f5;
+}
+.order_details .order-list-img{
+	margin:5px;
+}
+.order_details .order-list-img>img{
+	width:100%;
+	height:100%;
+}
+.order_details .t-color{
+	font-size:12px;
+	color:#aaa;
+}
+.order_details .order-num{
+	padding-top:10px;
+}
+.order_details .order-num>span{
+    display: block;
+    padding-left:20px;
+    font-size:14px;
+}
+.order_details .price{
+	color:red;
+}
+.order_details .old-price>s{
+	font-size:12px;
+	color:#aaa;
+	margin-left:2px;
+}
+.order_details .order-money{
+	margin-top:20px;
+}
+.order_details .order-money>div{
+	padding:0px 20px 0;
+}
+.order_details .money{
+	color:red;
+}
+.order_details .contact{
+	margin-top:20px;
+    padding-bottom:15px;
+	border-bottom:1px solid #bbb;
+}
+	
+.order_details .contact>div{
+    text-align:center;
+    padding-bottom:25px;
+}
+.order_details .contact>div>span{
+	display: block;
+	margin:0 5px;
+	padding:7px 20px;
+	background-color:#007cdc;
+	border-radius:10px;
+	color:#fff;
+}
+.order_details .order-infor{
+	padding:0 15px;
+	margin-top:30px;
+}
+.order_details .order-infor>span{
+	display: block;
+	color:#aaa;
+}
+.order_details .bnt-bot>div>span{
+   padding:10px 15px; 
+   color:#fff;
+   border-radius:10px;
+}
+.order_details .bnt1{
+	background-color:#ff2a00;
+}
+.order_details .bnt2{
+	background-color:#ff8400;
+}
+.order_details .bnt3{
+	background-color:#0078ff;
+}

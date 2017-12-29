@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>set_ser</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./set_ser.css" />
+</head>
+<body>
+<div class="set_ser" ng-controller="set_serController">
+	<div class="bar bar-positive bar-color">
+		<div class="button button-clear">
+			<i class="icon ion-ios-arrow-left"></i>
+		</div>
+ 		<label class="item item-input input-center">
+             <input type="text" placeholder="">
+ 		     <i class="icon ion-ios-search-strong"></i>
+         </label>
+    </div>
+    <ion-content class="con">
+    	<div class="row row-wrap lis">
+    		<div class="col-33" ng-repeat="data in textData track by $index">
+    			<span>{{data.text}}</span>
+    		</div>
+    	</div>
+    </ion-content>
+</div>	
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./set_serController.js"></script>
+</html>

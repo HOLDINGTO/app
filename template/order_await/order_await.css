@@ -1,0 +1,113 @@
+
+.order_await .all{
+	margin-top:15px;
+	margin-bottom:10px;
+	border-bottom:1px solid #aaa;
+}
+.order_await .all-det{
+	margin:0 auto;
+}
+.order_await .all-h{
+	font-size:16px;
+}
+.order_await .all-h>span{
+	font-size:13px;
+}
+.order_await .nav{
+	margin-top:10px;
+	padding:0;
+	/*position: relative;*/
+}
+.order_await .nav-lis{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #aaa;
+}
+.order_await .status{
+	font-weight: bold;
+}
+.order_await .active{
+	color:#017efe;
+}
+.order_await .order-lis{
+	margin-top:10px;
+}
+.order_await .order-lis>div{
+   padding:0;
+ }
+ .order_await .item-box{
+	margin-bottom:30px;
+}
+ .order_await .order-sta{
+ 	padding:5px;
+ 	margin:0 10px;
+ }
+  .order_await .order-main{
+  	background-color:#f5f5f5;
+  	padding:20px 0;
+  }
+ .order_await .order-img{
+ 	padding:5px;
+ }
+ .order_await .order-img>img{
+ 	width:100%;
+ 	height:100%;
+ }
+ .order_await .order-infor{
+ 	position: relative;
+ 	margin-left:5px;
+ }
+ .order_await .pro-color{
+ 	color:#aaa;
+  	font-size:12px;
+ }
+.order_await .fre{
+ 	position: absolute;
+  	color:#aaa;
+  	font-size:12px;
+    left:0;
+    bottom:0;
+ }
+ .order_await .order-pr>span{
+ 	display: block;
+ 	padding-left:10px;
+ 	margin-top:5px;
+ }
+.order_await .pr{
+	color:red;
+}
+.order_await .ol-pr{
+	font-size:12px;
+	color:#aaa;
+}
+.order_await .sum{
+	font-size:13px;
+	padding-left:30px !important;
+}
+.order_await .bnt{
+	margin:10px 0;
+}
+
+.order_await .del{
+	font-size:15px;
+	text-align:center;
+	color:#fff
+}
+.order_await .del>span{
+	display: block;
+	padding:7px 15px;
+	background-color:#ff2a00;
+	border-radius:10px;
+}
+.order_await .sure{
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+}
+.order_await .sure>span{
+	display: block;
+	padding:7px 20px;
+	margin-left:20px;
+	border-radius:10px;
+	background-color:#0078ff;
+}

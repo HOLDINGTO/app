@@ -1,0 +1,113 @@
+
+.order_pay .all{
+	margin-top:15px;
+	margin-bottom:10px;
+	border-bottom:1px solid #aaa;
+}
+.order_pay .all-det{
+	margin:0 auto;
+}
+.order_pay .all-h{
+	font-size:16px;
+}
+.order_pay .all-h>span{
+	font-size:13px;
+}
+.order_pay .nav{
+	margin-top:10px;
+	padding:0;
+	/*position: relative;*/
+}
+.order_pay .nav-lis{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #aaa;
+}
+.order_pay .status{
+	font-weight: bold;
+}
+.order_pay .active{
+	color:#017efe;
+}
+.order_pay .order-lis{
+	margin-top:10px;
+}
+.order_pay .order-lis>div{
+   padding:0;
+ }
+ .order_pay .item-box{
+	margin-bottom:30px;
+}
+ .order_pay .order-sta{
+ 	padding:5px;
+ 	margin:0 10px;
+ }
+  .order_pay .order-main{
+  	background-color:#f5f5f5;
+  	padding:20px 0;
+  }
+ .order_pay .order-img{
+ 	padding:5px;
+ }
+ .order_pay .order-img>img{
+ 	width:100%;
+ 	height:100%;
+ }
+ .order_pay .order-infor{
+ 	position: relative;
+ 	margin-left:5px;
+ }
+ .order_pay .pro-color{
+ 	color:#aaa;
+  	font-size:12px;
+ }
+.order_pay .fre{
+ 	position: absolute;
+  	color:#aaa;
+  	font-size:12px;
+    left:0;
+    bottom:0;
+ }
+ .order_pay .order-pr>span{
+ 	display: block;
+ 	padding-left:10px;
+ 	margin-top:5px;
+ }
+.order_pay .pr{
+	color:red;
+}
+.order_pay .ol-pr{
+	font-size:12px;
+	color:#aaa;
+}
+.order_pay .sum{
+	font-size:13px;
+	padding-left:30px !important;
+}
+.order_pay .bnt{
+	margin:10px 0;
+}
+
+.order_pay .del{
+	font-size:15px;
+	text-align:center;
+	color:#fff
+}
+.order_pay .del>span{
+	display: block;
+	padding:7px 15px;
+	background-color:#ff2a00;
+	border-radius:10px;
+}
+.order_pay .sure{
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+}
+.order_pay .sure>span{
+	display: block;
+	padding:7px 20px;
+	margin-left:20px;
+	border-radius:10px;
+	background-color:#0078ff;
+}

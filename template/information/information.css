@@ -1,0 +1,15 @@
+.active{
+	border-bottom:3px solid #ff7e00;
+	color:#ff7e00;
+}
+.information .head{
+	padding-bottom:20px;
+	border-bottom:1px solid #878787;
+}
+.information .head>div{
+	padding-top:35px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#878787;
+}

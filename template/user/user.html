@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>user</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./user.css" />
+</head>
+<body>
+<div class="user" ng-controller="userController">
+	<ion-content>
+		<div class="u-head">
+			<span class="head-img l">
+				<img calss="auto-img" src="../../images/I'm_portrait@2x.png" />
+			</span>
+			<span class="head-name l"><span>昵称: </span>djhfsdskdiudshaJ</span>
+			<span class="head-code l">
+				<div class="code">
+					<img src="../../images/icons/I'm_icons11@2x.png" />
+				    <span class="code-t">扫一扫</span>
+				</div>
+			</span>
+		</div>
+		<div class="order">
+			<span class="order-head">
+				我的订单 
+				<span class="more-order r">查看更多订单 <i class="icon ion-ios-arrow-right"></i></span>
+		    </span>
+		    <ul class="row order-list">
+		    	<li class="col-20 l order-li" ng-repeat="item in orderData track by $index">
+		    		<div>
+		    			<img ng-src="{{item.imgUrl}}" />
+		    			<span class="order-status">{{item.status}}</span>
+		    		</div>
+		    	</li>
+		    </ul>
+		</div>
+		<div class="user-list list">
+			<div class="item item-icon-right fr">
+				<span class="item-t"><i class="min-icon"><img src="../../images/icons/I'm_icons6@2x.png" /></i>地址管理</span>
+				<i class="icon ion-ios-arrow-right"></i>
+			</div>
+			<div class="item item-icon-right">
+				<span class="item-t"><i class="min-icon"><img src="../../images/icons/I'm_icons7@2x.png" /></i>购买记录</span>
+				<i class="icon ion-ios-arrow-right"></i>
+			</div>
+			<div class="item item-icon-right">
+				<span class="item-t"><i class="min-icon"><img src="../../images/icons/I'm_icons8@2x.png" /></i>修改个人资料</span>
+				<i class="icon ion-ios-arrow-right"></i>
+			</div>
+			<div class="item item-icon-right last">
+				<span class="item-t"><i class="min-icon"><img src="../../images/icons/I'm_icons9@2x.png" /></i>消息</span>
+				<i class="icon ion-ios-arrow-right"></i>
+			</div>
+		</div>
+		<div class="set list">
+			<div class="item item-icon-right">
+				<span class="item-t"><i class="min-icon"><img src="../../images/icons/I'm_icons10@2x.png" /></i>设置</span>
+				<i class="icon ion-ios-arrow-right"></i>
+			</div>
+		</div>
+	</ion-content>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./userController.js"></script>
+</html>

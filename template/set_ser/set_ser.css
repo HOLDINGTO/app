@@ -1,0 +1,21 @@
+.set_ser .input-center{
+	border-radius:20px;
+	width:70%;
+	margin:0 auto;
+}
+.set_ser .input-center>i{
+	margin-right:8px;
+}
+.set_ser .con{
+	padding-top:44px;
+}
+.set_ser .lis>div{
+	text-align:center;
+}
+.set_ser .lis>div>span{
+	display: block;
+	margin:5px;
+	padding:6px;
+	border:1px solid #c4c4c4;
+	border-radius:20px;
+}

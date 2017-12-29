@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./privacy_set.css" />
+</head>
+<body>
+	
+<div class="privacy_set">
+	<ion-header-bar class="bar-positive align-title="center">
+   	<div class="button button-clear">
+   		<i class="icon ion-ios-arrow-left"></i>
+   	</div>
+   	<div class="title titl">隐私设置</div>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list>
+			<ion-checkbox>
+			    允许通过手机号码找到我
+			    <!-- <span>
+			    	关闭后，其他用户将不能通过手机号搜索到你，你也不会
+                    出现在其他人的手机
+                </span> -->
+			</ion-checkbox>
+			<ion-checkbox>
+			    允许通过会员名搜索到我
+			    <!-- <span>
+			    	关闭后，其他用户将不能通过会员名搜索到你
+                </span> -->
+			</ion-checkbox>
+		</ion-list>
+	</ion-content>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./privacy_setController.js"></script>
+</html>

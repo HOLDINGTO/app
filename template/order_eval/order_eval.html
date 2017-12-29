@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>order_eval</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./order_eval.css" />
+</head>
+<body>
+<div class="order_eval" ng-controller="orderEvalController">
+	<ion-header-bar class=" align-title=center bar-positive">
+	   	<div class="button button-clear">
+	   		<i class="icon ion-ios-arrow-left"></i>
+	   	</div>
+	   	<div class="title titl">我 的 订 单</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="all row">
+			<div class="col-90 all-det">
+				<span class="all-h">
+					我的订单 
+					<span class="r">全部订单 <i class="ico-s icon ion-ios-arrow-right"></i></span>
+				</span>
+			</div>
+		</div>
+		<div class="row nav">
+			<div class="col-20 nav-lis" ng-repeat="data in navData track by $index">
+				<span class="{{data.cla}}">{{data.text}}</span>
+			</div>
+		</div>
+		<div class="order-lis list">
+			<div class="item item-box" ng-repeat="data in orderData track by $index">
+				<span class="status order-sta r">{{data.status}}</span>
+				<div class="order-main row">
+					<div class="col-25 order-img">
+						<img ng-src="{{data.imgUrl}}" />
+					</div>
+					<div class="col-50 order-infor">
+						<h3>{{data.name}}</h3>
+						<span class="pro-color">颜色： <span>{{data.color}}</span></span>
+						<span class="fre">{{data.freight}}</span>
+					</div>
+					<div class="col-25 order-pr">
+						<span class="pr">{{data.price}}</span>
+						<span class="ol-pr"><s>{{data.o_price}}</s></span>
+						<span class="sum">X <span class=“num>{{data.num}}</span></span>
+					</div>
+				</div>
+				<div class="row bnt">
+					<div class="col-25 col-offset-50 del">
+						<span>删除订单</span>
+					</div>
+					<div class="col-25 sure">
+						<span>评价</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</div>	
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./order_evalController.js"></script>
+</html>

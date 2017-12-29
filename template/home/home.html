@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>angular mobile template</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./home.css" />
+</head>
+<body>
+<div class="home" ng-controller="homeController">
+	<div class="bar bar-positive bar-color">
+ 		<label class="item item-input input-center">
+             <input type="text" placeholder="输入搜索内容">
+ 		     <i class="icon ion-ios-search-strong"></i>
+         </label>
+    	<div class="button button-clear">登录</div>
+    </div>
+    <ion-content class="home-main">
+        <!-- banner图片 -->
+		<ion-slide-box  does-continue={{slide.doesContinue}} auto-play="slide.autoPlay">
+			<ion-slide ng-repeat="item in bannerData track by $index">
+				<img class="auto-img" ng-src="{{item.imgUrl}}" />
+			</ion-slide>
+		</ion-slide-box>
+        <!-- 产品分类部分 -->
+    	<div class="row classify">
+    		<div class="col-25"  ng-repeat="item in classifyData track by $index">
+    			<div class="classify-img">
+    				<img class="full-image" ng-src="{{item.imgUrl}}" />
+    				<span>{{item.intro}}</span>
+    			</div>
+    		</div>
+    	</div>
+        <!-- 实惠好货部分 -->
+    	<div class="goods">
+    		<div class="head-icon">
+               <span class="head-icon-line-l l"></span>      
+               <span class="head-icon-cen"><i><img src="../../images/icons/home_Module1_icons1@2x.png" /></i>实惠好货</span>   
+               <span class="head-icon-line-r r"></span>      
+            </div>
+            <div class="row row-wrap goods-list">
+                <div class="col-50" ng-repeat="item in goodsData track by $index">
+                    <div class="goodslist">
+                         <div class="goodslist-img">
+                             <img class="auto-img" ng-src="{{item.imgUrl}}" />
+                         </div>
+                         <div class="goods-intro">
+                             <div class="intro-text">{{item.text}}</div>
+                             <div class="price"><span class="coin">{{item.coin}}</span>{{item.price}}</div>
+                             <span class="goods-bottom">
+                                 <s class="s-price"><span>{{item.coin}}</span>{{item.cost}}</s>
+                                 <span class="esti r">{{item.estimate}} <span class="esti-pro">{{item.probablity}}</span></span>
+                             </span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+        <!-- 为你推荐部分 -->
+        <div class="recom">
+            <div class="head-icon">
+               <span class="head-icon-line-l l"></span>      
+               <span class="head-icon-cen"><i><img src="../../images/icons/home_Module2_icons1@2x.png" /></i>为你推荐</span>   
+               <span class="head-icon-line-r r"></span>      
+            </div>
+            <div class="row row-wrap recom-h">
+                <div class="col-50 recom-list-headl">
+                    <div class="headl">
+                        <div class="headl-top">
+                            <img class="auto-img" src="../../images/classification_picture1@2x.png" />
+                        </div>
+                        <div class="row row-wrap headl-bottom">
+                            <span class="full col-100">韩国丝拼接汽车脚垫</span>
+                            <span class="full col-100">
+                                <span>精致选材</span>
+                                <span>质量上乘</span>
+                                <span>性价比高</span>
+                            </span>
+                            <span class="full col-100">1299元起</span>
+                            <span class="bnt">点击查看</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50 recom-list-headr">
+                    <div class="headr">
+                        <div class="headr-img">
+                            <img class="auto-img" src="../../images/classification_picture5@2x.png" />
+                        </div>
+                        <span class="recom-intro-text">热压汽车脚垫</span>
+                        <span class="recom-price">
+                            <span>￥399 -</span>
+                            <span>￥999</span>
+                        </span>  
+                    </div>
+                    <div class="headr">
+                        <div class="headr-img">
+                            <img class="auto-img" src="../../images/home_Module2_picture1@2x.png" />
+                        </div>
+                        <span class="recom-intro-text">奥迪 Q3尼龙簇绒脚垫</span>
+                        <span class="recom-price">
+                            <span>￥399 -</span>
+                            <span>￥999</span>
+                        </span>  
+                    </div>
+                </div>
+            </div>
+            <div class="row row-wrap recom-list">
+                <div class="col-50">
+                    <div class="recom-box-l">
+                        <div class="">
+                            <img class="auto-img" src="../../images/home_Module2_picture4@2x.png" />
+                        </div>
+                        <span class="recom-intro-text">热压汽车脚垫</span>
+                        <span class="recom-price">
+                            <span>￥399 -</span>
+                            <span>￥999</span>
+                        </span>  
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="recom-box-r">
+                        <div class="">
+                            <img class="auto-img" src="../../images/home_Module2_picture2@2x.png" />
+                        </div>
+                        <span class="recom-intro-text">热压汽车脚垫</span>
+                        <span class="recom-price">
+                            <span>￥399 -</span>
+                            <span>￥999</span>
+                        </span>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="like">
+            <div class="head-icon">
+               <span class="head-icon-line-l l"></span>      
+               <span class="head-icon-cen"><i><img src="../../images/icons/home_Module3_icons1@2x.png" /></i>猜你喜欢</span>   
+               <span class="head-icon-line-r r"></span>      
+            </div>
+            <div class="row row-wrap like-list">
+                <div class="col-50"  ng-repeat="data in likeData track by $index">
+                   <div class="like-box">
+                        <div class="like-img">
+                            <img class="auto-img" ng-src="{{data.imgUrl}}" />
+                        </div>
+                        <span class="like-intro-text">{{data.text}}</span>
+                        <span class="bot">
+                            <span class="b-price">{{data.price}}</span>
+                            <span class="b-number r">{{data.price}}<span class="b-esti">人评价</span></span>
+                        </span>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+    <!-- 底部导航栏 -->
+    <ion-tabs class="tabs-light tabs-icon-top">
+    	<ion-tab title="首页" icon-on="ion-ios-home" icon-off="ion-ios-home-outline">
+	    </ion-tab>
+	    <ion-tab title="分类" icon-on="ion-ios-list" icon-off="ion-ios-list-outline">
+	    </ion-tab>
+	    <ion-tab title="购物车"  icon-on="ion-ios-cart" icon-off="ion-ios-cart-outline">
+	    </ion-tab>
+	    <ion-tab title="我的" icon-on="ion-ios-person" icon-off="ion-ios-person-outline">
+	    </ion-tab>
+    </ion-tabs>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="../../config/config.js"></script>
+<script type="text/javascript" src="./homeController.js"></script>
+</html>

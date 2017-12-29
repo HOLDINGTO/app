@@ -1,0 +1,35 @@
+
+
+
+
+.pay_fail .tip-img{
+	width:80%;
+	text-align:center;
+	margin:0 auto;
+	margin-top:50px;
+}
+.pay_fail .tip-img>img{
+	width:100px;
+	height:100px;
+}
+.pay_fail .pay-state{
+	display: block;
+	font-size:18px;
+	color:red;
+	margin-top:10px;
+	margin-bottom:50px;
+}
+.pay_fail .selec>div>div{
+	text-align:center;
+	width:60%;
+    color:#fff;
+    margin:0 auto;
+    border-radius:20px;
+    padding:10px 5px;
+}
+.pay_fail .conti{
+   background-color:#ff9601;   
+}
+.pay_fail .check{
+	background-color:#0161ff;
+}

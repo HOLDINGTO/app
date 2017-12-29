@@ -1,0 +1,23 @@
+
+ .person_datum .item-avatar-right>img:first-child{
+	right:45px;
+}
+.person_datum .bnt-color{
+	color:#000;
+	top:20px;
+	right:0px;
+}
+.person_datum .line{
+	line-height: 42px;
+	padding-right:90px;
+}
+.person_datum .pd-l{
+   padding-right:40px;
+}
+.person_datum .ico{
+	position:absolute;
+	top:13px;
+	right:20px;
+	color:#aaa;
+	font-size:24px;
+}

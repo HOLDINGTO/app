@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>order_details</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./order_details.css" />
+</head>
+<body>
+<div class="order_details" ng-controller="orderdetaController">
+	<ion-header-bar class=" align-title=center bar-positive">
+	   	<div class="button button-clear">
+	   		<i class="icon ion-ios-arrow-left"></i>
+	   	</div>
+	   	<div class="title titl">订单详情</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="order-list row row-wrap">
+			<div class="col-25 order-list-img">
+				<img src="../../images/classification_picture1@2x.png" />
+			</div>
+			<div class="col-50">
+                 <h5>韩国丝拼接汽车脚垫</h5>
+                 <span class="t-color">颜色： <span>紫色</span></span>
+			</div>
+			<div class="col-20 order-num">
+				<span class="price">199</span>
+				<span class="old-price"><s>399</s></span>
+				<span class="number"><span>X</span> 1</span>
+			</div>
+		</div>
+		<div class="order-money">
+			<div class="fre-money">
+				<span>运费</span>
+				<span class="money r">￥8</span>
+			</div>
+			<div class="pro-money">
+				<span>实付款（含运费）</span>
+				<span class="money r">￥208</span>
+			</div>
+			<div class="row contact">
+				<div class="col-50">
+					<span>联系卖家</span>
+				</div>
+				<div class="col-50">
+					<span>拨打电话</span>
+				</div>
+			</div>
+		</div>
+		<div class="order-infor">
+			<span>订 单 编 号： <span>1426785214688752</span></span>
+			<span>支付宝交易号： <span>2015112721001001820235375769</span></span>
+			<span>创 建 时 间： <span>2015-11-27 22:07:58</span></span>
+			<span>付 款 时 间： <span>2015-11-27 22:08:27</span></span>
+			<span>发 货 时 间： <span>2015-11-27 22:30:24</span></span>
+		</div>
+	</ion-content>
+	<ion-tabs>
+		<div class="row bnt-bot">
+			<div class="col-25 col-offset-25">
+				<span class="bnt1">延长收货</span>
+			</div>
+			<div class="col-25">
+				<span class="bnt2">查看物流</span>
+			</div>
+			<div class="col-25">
+				<span class="bnt3">确认收货</span>
+			</div>
+		</div>
+	</ion-tabs>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./order_detailsController.js"></script>
+</html>

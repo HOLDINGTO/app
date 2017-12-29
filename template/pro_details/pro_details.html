@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>pro_details</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./pro_details.css" />
+</head>
+<body>
+<div class="pro_details" ng-controller="pro_detaController">
+	<ion-header-bar class="bar-positive align-title="center">
+	   	<div class="button button-clear">
+	   		<i class="icon ion-ios-arrow-left"></i>
+	   	</div>
+	   	<div class="title titl">产品详情</div>
+	</ion-header-bar>
+	<ion-content>
+		<!-- 产品banner图 -->
+		<ion-slide-box  does-continue={{slide.doesContinue}} auto-play="slide.autoPlay">
+			<ion-slide ng-repeat="item in bannerData track by $index">
+				<img class="auto-img" ng-src="{{item.imgUrl}}" />
+			</ion-slide>
+		</ion-slide-box>
+		<!-- 介绍产品 -->
+		<div class="intro">
+			<h4>电动汽车脚垫车型</h4>
+			<span class="price">￥125.00</span>
+			<span>
+				<span>免运费</span>
+				<span class="r">
+					<span>月销</span>
+					<span class="num">6666</span>
+					<span>笔</span>
+				</span>
+			</span>
+		</div>
+		<div class="serve">
+			<h5>服务承诺:</h5>
+			<span class="serve-list">
+				<span>正品保证</span>
+				<span>极速退款</span>
+				<span>材质保真险</span>
+				<span>赠运费险</span>
+				<span>七天无理由退换</span>
+			</span>
+		</div>
+		<div class="list sle-color">
+			<div class="item item-icon-right no-line">
+				<span>选择颜色分类</span>
+				<i class="icon ion-ios-arrow-forward"></i>
+			</div>
+		</div>
+		<div class="esti">
+			<h4>评价</h4>
+			<div class="row row-wrap esti-box">
+				<div class="col-33" ng-repeat="data in estiData track by $index">
+					<span class="esti-t">
+						<span>{{data.title}}</span>
+					    <span>{{data.num}}</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="esti-list">
+			<div class="list">
+				<div class="item item-avatar no-line">
+					<img class="auto-img" src="../../images/appraise_picture@2x.png" />
+					<h2>b*4</h2>
+				</div>
+				<div class="esti-list-text">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;严实合缝的没话说 感叹科技的发达 最满意的网购之一 原谅我手懒不上图了 买之前根本没有担心质量问题 就担心不严实不匹配 看来担心多余了 而且速度非常快 一天加工 一天半物流真是快</p>
+					<span class="cls">
+					<span>2017-04-21</span>
+					<span class="color-cls">
+						<span>颜色分类：</span>
+						<span>A款黑色全包围+灰黑色丝圈双层</span>
+					</span>
+				</span>
+				</div>
+			</div>
+		</div>
+		<div class="button button-full color-bnt">点击更多评价</div>
+		<div class="details">
+			<h4>详情</h4>
+			<div class="details-main row row-wrap">
+				<div class="col-90 details-h">
+					<h5><span>品牌名称：</span>御捷电动汽车脚垫3</h5>
+				</div>
+				<div class="col-50 details-img">
+					<img src="../../images/particulars_picture@2x.png" />
+				</div>
+				<div class="col-50 details-t">
+					<span>产品参数：</span>
+					<span class="" ng-repeat="item in details_tData track by $index">
+						<span>{{item.label}}: <span>{{item.intro}}</span></span>
+					</span>
+				</div>
+			</div>
+			<div class="button button-full color-bnt">点击更多详情</div>
+		</div>
+
+	</ion-content>
+	<ion-tabs class="tabs-light tabs-icon-top">
+         <div class="row tab-list">
+         	<div class="col-33 contro">
+         		<div class="custo">
+         			<img src="../../images/icons/productdetails_icons1@2x.png" />
+         		    <span>客服</span>
+         		</div>
+         		<div class="colle r">
+         			<img src="../../images/icons/productdetails_icons2@2x.png" />
+         		    <span>收藏</span>
+         		</div>
+         	</div>
+         	<div class="col-33 cart">
+         		加入购物车
+         	</div>
+         	<div class="col-33 buy">
+         		立即购买
+         	</div>
+         </div>
+    </ion-tabs>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./pro_detailsController.js"></script>
+</html>

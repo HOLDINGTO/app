@@ -1,0 +1,33 @@
+.search .input-center{
+	border-radius:20px;
+	width:70%;
+	margin:0 auto;
+}
+.search .input-center>i{
+	margin-right:8px;
+}
+.search .list-item{
+	border:none;
+	color:#000;
+	padding:0;
+}
+.search .ite-text{
+	display: block;
+	line-height:25px;
+	margin:10px;
+	padding-left:10px;
+	border-left:2px solid #000;
+}
+.search .dis{
+   display:block;
+   padding:10px;
+   background-color:#0048ff;
+   color:#fff;
+   margin:10px;
+   border-radius:35px;
+   font-size:14px;
+}
+.search .i-color{
+	color:#bbb;
+	font-size:23px;
+}

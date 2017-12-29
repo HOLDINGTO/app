@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>regard</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./regard.css" />
+</head>
+<body>
+<div class="regard" ng-controller="regardController">
+		<ion-header-bar class="bar-positive align-title="center">
+	   	<div class="button button-clear">
+	   		<i class="icon ion-ios-arrow-left"></i>
+	   	</div>
+	   	<div class="title titl">关于</div>
+	   </ion-header-bar>
+      <ion-content>
+	   	<div class="list">
+	   		<div class="item item-button-right" ng-repeat="data in regardText track by $index">
+               {{data.text}}
+               <div class="button button-clear bnt-color">
+               	<i class="icon ion-ios-arrow-right"></i>
+               </div>  
+	   		</div>
+	   	</div>
+	   </ion-content>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./regardController.js"></script>
+</html>

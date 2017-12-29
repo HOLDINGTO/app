@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>set</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./set.css" />
+</head>
+<body>
+<div class="set" ng-controller="setController">
+	<ion-header-bar class="bar-positive align-title="center">
+   	<div class="button button-clear">
+   		<i class="icon ion-ios-arrow-left"></i>
+   	</div>
+   	<div class="title titl">设置</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list">
+			<div class="item item-avatar item-button-right">
+				<img src="../../images/I'm_portrait@2x.png" />
+				<h2>高级会员</h2>
+				<p><span>会员名：</span>88888888888</p>
+				<div class="button button-clear bnt-color bnt-pos">
+					<i class="icon ion-ios-arrow-right"></i>
+				</div>
+			</div>
+			<div class="item item-button-right" ng-repeat="data in listText track by $index">
+		       {{data}}
+				<div class="button button-clear bnt-color">
+					<i class="icon ion-ios-arrow-right"></i>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</div>
+</body>
+<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./setController.js"></script>
+</html>

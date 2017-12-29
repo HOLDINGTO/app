@@ -1,0 +1,18 @@
+.cart_edit .num{
+	display: block;
+	margin-top:10px;
+	border:1px solid #ddd;
+}
+.cart_edit .num>span{
+	padding:5px;
+
+}
+.cart_edit .num>i{
+	border:1px solid #ddd;
+	padding:3px 5px;
+	background-color:#e3e3e3;
+}
+.cart_edit .price{
+    position: absolute;
+    bottom:0px;
+}

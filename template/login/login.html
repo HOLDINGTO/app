@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<title>login</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="./login.css" />
+</head>
+<body>
+<div class="login" ng-controller="loginController">
+		 <ion-header-bar class="bar-positive align-title="center">
+		   	<div class="button button-clear">
+		   		<i class="icon ion-ios-arrow-left"></i>
+		   	</div>
+		   	<div class="title titl">登录</div>
+		   	<div class="button button-clear regi">
+		   		注册
+		   	</div>
+	   </ion-header-bar>
+	   <ion-content>
+	   	<div class="head">
+	   			<div class="head-img">
+	   				<img class="auto-img" src="../../images/login_picture@2x.png" />
+	   			</div>	
+	   	</div>
+	   	<div class="row row-wrap">
+	   		<div class="col-80 col-offset-10">
+                <span class="ipt">
+                	<input type="text" name="" placeholder="请输入手机号码/帐号" />
+                </span>
+                <span class="ipt">
+                	<input type="password" name="" placeholder="请输入密码" />
+                </span>
+                <span class="service">
+                	<span class="auto-login">
+                		<input type="checkbox" name="">
+                		自动登陆
+                	</span>
+                	<span class="find r">忘记密码?</span>
+                </span>
+	   		</div>
+	   		<div class="col-80 col-offset-10">
+                <div class="bnt-login">登录</div>
+	   		</div>
+	   		<div class="col-80 col-offset-10">
+	   			<div class="account-box">
+	   				 <span class="account l">其他用户登录:</span>
+                   <span class="ac-icon l"><img src="../../images/icons/login_icons1@2x.png" /></span>
+                   <span class="ac-icon l"><img src="../../images/icons/login_icons2@2x.png" /></span>
+                   <span class="ac-icon l"><img src="../../images/icons/login_icons3@2x.png" /></span>
+	   			</div>  
+	   		</div>
+	   	</div>
+	   </ion-content>
+</div>
+
+</body>
+<script type="text/javascript" src='../../js/ionic.bundle.min.js'></script>
+<script type="text/javascript" src="../../module/module.js"></script>
+<script type="text/javascript" src="./loginController.js"></script>
+</html>

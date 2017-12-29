@@ -1,0 +1,45 @@
+.change .titl{
+	text-align:center !important;
+}
+.change .input-list{
+	width:75%;
+	margin:0 auto;
+	margin-top:20px;
+}
+.change .item-bor{
+	position:relative;
+	padding:15px 15px 0px 5px;
+	border:none;
+	border-bottom:1px solid #ddd;
+	margin-bottom:5px;
+}
+.change .code{
+	position:absolute;
+	line-height:34px;
+	right:40px;
+	top:16px;
+	color:#000;
+}
+.change .prot{
+	padding-left:15px;
+	position: relative;
+	display:block;
+	line-height:34px;
+}
+.change .prot>input{
+	position: absolute;
+	top:11px;
+	left:0px;
+}
+.change .bnt{
+	display:block;
+	line-height:35px;
+	text-align:center;
+	font-size:18px;
+	width:70%;
+	margin:0 auto;
+	margin-top:15px;
+	border-radius:10px;
+	background:#fe6c00;
+	color:#fff;
+}
